@@ -1,0 +1,91 @@
+/* General Styles */
+body {
+    font-family: 'Times New Roman', serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+}
+
+/* Resume Container */
+.resume {
+    width: 800px;
+    background-color: white;
+    display: flex;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border: 1px solid black;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 30%;
+    background-color: #353938;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.sidebar h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.sidebar p {
+    font-size: 14px;
+    margin: 10px 0;
+}
+
+.sidebar a {
+    color: #ddd;
+    text-decoration: none;
+}
+
+.sidebar a:hover {
+    color: white;
+}
+
+/* Main Content */
+.main-content {
+    width: 70%;
+    padding: 20px;
+}
+
+/* Section Styling */
+.section {
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid black; /* Modern touch: Underline effect */
+}
+
+.section h2 {
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.section p, .section ul {
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+.section ul {
+    padding-left: 20px;
+}
+
+.section ul li {
+    margin: 3px 0;
+}
+
+/* Print-Friendly */
+@media print {
+    body {
+        background: white;
+    }
+    .resume {
+        box-shadow: none;
+        border: none;
+    }
+}
+
